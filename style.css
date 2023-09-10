@@ -173,8 +173,13 @@ nav{
 }
 #back-to-top-btn:hover {
     background-color: var(--jet);
+
+
+.testimonials {
+    margin-top: 30px;  
+
+}
+.footer {
+    background-color: var(--united-nations-blue);
 }
 
-.footer {
-    background-color: var(--jade);
-}

@@ -16,26 +16,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    var body = document.body;
-    function animateBodyOnScroll() {
-        if (isElementInViewport(body)) {
-            body.style.opacity = "1";
-        }
-    }
-
-
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    window.addEventListener("scroll", animateBodyOnScroll);
-    animateBodyOnScroll();
-});
 
